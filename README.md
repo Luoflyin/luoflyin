@@ -8,7 +8,7 @@
 ## Share
 
 > [ReadBook Note](docs/booknotes/)   
-> [bitknowledges](docs/bitknowledges/)  
+> [Bitknowledges](docs/bitknowledges/)  
 
 ## Write
 
