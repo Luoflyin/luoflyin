@@ -9,7 +9,3 @@
 
 > [ReadBook Note](docs/booknotes/)   
 > [Bitknowledges](docs/bitknowledges/)  
-
-## Write
-
-> [数学笔记](docs/maths/)
