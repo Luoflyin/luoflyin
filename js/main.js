@@ -1,12 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // 判断是否是主页
-  if (window.location.pathname === "/" || window.location.pathname === "/README.md") {
-    // 主页加载时启用 pace.js 进度条
-    Pace.restart();
-  } else {
-    // 子页面加载时禁用 pace.js
-    Pace.options.ajax = false; // 禁用 AJAX 请求时触发进度条
-    Pace.options.document = false; // 禁用文档加载时触发进度条
-    Pace.options.eventLag = false; // 禁用事件延迟触发进度条
-  }
-});
+// 检查是否是首次加载
+if (!localStorage.getItem('visited')) {
+    // 设置 Pace.js 启动
+    Pace.restart(); // 确保第一次加载时显示进度条
+    
+    // 标记为已访问
+    localStorage.setItem('visited', 'true');
+} else {
+    // 如果已经访问过，不再显示进度条
+    Pace.options = {
+        document: false,  // 禁用文档加载进度条
+        eventLag: false,  // 禁用事件延迟检测
+        ajax: false,      // 禁用 AJAX 进度条
+    };
+}
