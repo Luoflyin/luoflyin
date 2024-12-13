@@ -1,6 +1,5 @@
-$(function() {
-    "use strict";
-    
+
+    "use strict";  
     // Preloader
     var loader = $(".loader");
     var wHeight = $(window).height();
@@ -31,7 +30,6 @@ $(function() {
         (loader).fadeOut('fast');
     }, 3500);
     var wind = $(window);
-});
 
 
 
