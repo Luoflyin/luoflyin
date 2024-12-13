@@ -30,7 +30,6 @@ $(function() {
         $(".loader-wrapper").fadeOut('fast');
         (loader).fadeOut('fast');
     }, 3500);
-    var wind = $(window);
 // Preloader page
 paceOptions = {
     ajax: true,
